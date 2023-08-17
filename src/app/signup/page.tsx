@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 // router is changed in NextJS
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import Header from "../Header";
 
 export default function Signup() {
 
@@ -44,7 +45,9 @@ export default function Signup() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 ">
+    <>
+    <Header />
+    <div className="flex flex-col items-center justify-center ">
       <h1>{loading ? "Processing" : "Signup"}</h1>
       <hr />
       <label htmlFor="username">username</label>
@@ -79,5 +82,6 @@ export default function Signup() {
       </button>
       <Link href="/login">Already have account?</Link>
     </div>
+    </>
   );
 }
