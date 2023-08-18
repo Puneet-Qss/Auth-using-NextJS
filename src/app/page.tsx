@@ -10,7 +10,7 @@ function Page() {
       <Header />
        
       </div>
-      <div>
+      <div className="flex  justify-center mt-10">
         <h3>Welcome to my app</h3>
       </div>
     </>

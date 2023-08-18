@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 // router is changed in NextJS
 import axios from "axios";
-import { toast } from "react-hot-toast/headless";
+import toast, { Toaster } from 'react-hot-toast';
 import Header from "../Header";
 
 export default function Login() {
